@@ -1,0 +1,106 @@
+/*
+**
+**	Filename: HD44780.h
+**
+**	Project: LCD
+** 
+**	Processor: LPC2103
+**
+**	Compiler: GCC
+**
+**	Date/Time: 08/gen/07 17:13:40
+**
+**	Abstract:
+**
+**		HD44780.h header file.
+**
+**	Settings:
+**
+**	Contents:
+**
+**	(c) Copyright 2007
+**
+**
+** ###################################################################
+*/
+
+#ifndef __HD44780_H
+#define __HD44780_H
+/* MODULE HD44780 */
+#define true  1
+#define false 0
+
+#define IR 0
+#define DR 1
+
+#define TOTAL_CHARACTERS_OF_LCD 32
+#define LCD_LINE_LENGHT 16
+
+// Display commands
+#define DISPLAY_CLEAR_CMD				0x01		//	Clears display and set DDRAM address 0
+#define RETURN_HOME_CMD					0x02		//	DDRAM address 0, display in original position
+
+
+#define ENTRY_MODE_DEC_NO_SHIFT_CMD		0b00000100	//	Entry mode decrement, no display shift
+#define ENTRY_MODE_DEC_SHIFT_CMD		0b00000101	//	Entry mode decrement, display shift
+#define ENTRY_MODE_INC_NO_SHIFT_CMD		0x06		//	Entry mode increment, no display shift
+#define ENTRY_MODE_INC_SHIFT_CMD		0b00000111	//	Entry mode increment, display shift
+
+#define DISP_OFF_CUR_OFF_BLINK_OFF_CMD	0b00001000	//	Display off, cursor off, blinking off
+#define DISP_OFF_CUR_OFF_BLINK_ON_CMD	0b00001001	//	Display off, cursor off, blinking on
+#define DISP_OFF_CUR_ON_BLINK_OFF_CMD	0b00001010	//	Display off, cursor on, blinking off
+#define DISP_OFF_CUR_ON_BLINK_ON_CMD	0b00001011	//	Display off, cursor on, blinking on
+#define DISP_ON_CUR_OFF_BLINK_OFF_CMD	0x0c		//  Display on, cursor off, blinking off
+#define DISP_ON_CUR_OFF_BLINK_ON_CMD	0b00001101	//	Display on, cursor off, blinking on
+#define DISP_ON_CUR_ON_BLINK_OFF_CMD	0b00001110	//	Display on, cursor on, blinking off
+#define DISP_ON_CUR_ON_BLINK_ON_CMD		0b00001111	//	Display on, cursor on, blinking on
+	
+#define CURSOR_MOVE_SHIFT_LEFT_CMD		0b00010000	// 	Cursor move, shift to the left
+#define CURSOR_MOVE_SHIFT_RIGHT_CMD		0b00011100	// 	Cursor move, shift to the right
+#define DISPLAY_MOVE_SHIFT_LEFT_CMD		0b00011000	// 	Display move, shift to the left
+#define DISPLAY_MOVE_SHIFT_RIGHT_CMD	0b00011100	// 	Display move, shift to the right
+
+#define FOUR_BIT_ONE_LINE_5x8_CMD		0b00100000	// 	4 bit, 1 line, 5x8 font size
+#define FOUR_BIT_ONE_LINE_5x10_CMD		0x24		// 	4 bit, 1 line, 5x10 font size
+#define FOUR_BIT_TWO_LINE_5x8_CMD		0b00101000	// 	4 bit, 2 line, 5x8 font size
+#define FOUR_BIT_TWO_LINE_5x10_CMD		0b00101100	// 	4 bit, 2 line, 5x10 font size
+#define EIGHT_BIT_ONE_LINE_5x8_CMD		0b00110000	// 	8 bit, 1 line, 5x8 font size
+#define EIGHT_BIT_ONE_LINE_5x10_CMD		0b00110100	// 	8 bit, 1 line, 5x10 font size
+#define EIGHT_BIT_TWO_LINE_5x8_CMD		0b00111000	// 	8 bit, 2 line, 5x8 font size
+#define EIGHT_BIT_TWO_LINE_5x10_CMD		0b00111100	// 	8 bit, 2 line, 5x10 font size
+
+#define CGRAM_ADDRESS(addr) (addr|=0x40)				// 	CGRAM addressing
+#define DDRAM_ADDRESS(addr) (addr|=0x80)				// 	DDRAM addressing
+
+#define NUM_TO_CODE(num)(num+0x30)					//  0-9 ROM codes
+#define CODE_TO_NUM(code)(code-0x30)        		//  0-9 ROM num
+
+
+// for i2c display in 4bit mode
+unsigned char WriteByte_i2c(unsigned char rs, unsigned char data_to_LCD);
+unsigned char InitLCD_i2c(void);
+unsigned char WriteChar_i2c(unsigned char character);
+unsigned char PutCommand_i2c(unsigned char Command);
+unsigned char GoToLine_i2c(unsigned char line, unsigned char col);
+void WriteString_i2c(unsigned char LineOfCharacters[TOTAL_CHARACTERS_OF_LCD], char OverLenghtCharacters);
+void WriteNumber_i2c(int number);
+
+// for normal display in 4bit mode
+typedef enum {ZERO, UNO, DUE, TRE} pin_Port;
+void lcd_pin(int register_select,  int read_write,  int enable,  int dataline4,  int dataline5,  int dataline6, int dataline7, pin_Port rs_port, pin_Port rw_port, pin_Port en_port, pin_Port d4_port, pin_Port d5_port, pin_Port d6_port, pin_Port d7_port);		//----LCD Pin Declaration Function
+void lcd_init();        						//----LCD Initializing Function
+void clear_line();								//----Function to clear data lines
+void toggle();      							//----Latching function of LCD
+void send_high(char v0);						//----Masking higher 4 bits and sending to LCD
+void send_low(char v0);							//----Masking lower 4 bits and sending to LCD
+void lcd_cmd_hf(char v1);   					//----Function to send half byte command to LCD
+void lcd_cmd(char v2);							//----Function to send Command to LCD
+void lcd_dwr(char v3);							//----Function to send data to LCD
+void lcd_msg(char *c);							//----Function to Send String to LCD
+void lcd_int_msg(int intero);					//----Function to Send number to LCD
+void lcd_lef_sh(); 								//----Left Shifting Function
+void lcd_rig_sh();  							//----Right Shifting Function
+void GoToLine(unsigned char line, unsigned char col);
+
+/* END HD44780 */
+#endif /* __HD44780_H*/

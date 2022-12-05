@@ -1,0 +1,32 @@
+13:03:54 **** Incremental Build of configuration Debug for project lpc1769_air_conditioning ****
+make -r -j4 all 
+Building file: ../src/lpc1769_air_conditioning.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/lpc1769_air_conditioning.d" -MT"src/lpc1769_air_conditioning.o" -MT"src/lpc1769_air_conditioning.d" -o "src/lpc1769_air_conditioning.o" "../src/lpc1769_air_conditioning.c"
+../src/lpc1769_air_conditioning.c: In function 'main':
+../src/lpc1769_air_conditioning.c:43:22: warning: unused variable 'pres64' [-Wunused-variable]
+     uint32_t pres32, pres64;
+                      ^~~~~~
+../src/lpc1769_air_conditioning.c:37:12: warning: variable 'rslt' set but not used [-Wunused-but-set-variable]
+     int8_t rslt;
+            ^~~~
+Finished building: ../src/lpc1769_air_conditioning.c
+ 
+Building target: lpc1769_air_conditioning.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="lpc1769_air_conditioning.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1769_air_conditioning_Debug.ld" -o "lpc1769_air_conditioning.axf"  ./src/HD44780_PCF8574_i2c.o ./src/bmp280.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/delay.o ./src/i2c_bit_banging.o ./src/lpc1769_air_conditioning.o ./src/sysinit.o   -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:       11152 B       512 KB      2.13%
+        RamLoc32:         164 B        32 KB      0.50%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: lpc1769_air_conditioning.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "lpc1769_air_conditioning.axf"; # arm-none-eabi-objcopy -v -O binary "lpc1769_air_conditioning.axf" "lpc1769_air_conditioning.bin" ; # checksum -p LPC1769 -d "lpc1769_air_conditioning.bin";
+   text	   data	    bss	    dec	    hex	filename
+  11148	      4	    160	  11312	   2c30	lpc1769_air_conditioning.axf
+ 
+
+13:03:55 Build Finished. 0 errors, 2 warnings. (took 1s.749ms)
+

@@ -1,0 +1,16 @@
+20:34:46 **** Build of configuration Debug for project webserver ****
+make -r -j4 all 
+Building target: webserver.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug" -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="webserver.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "webserver_Debug.ld" -o "webserver.axf"  ./lwip/src/netif/etharp.o ./lwip/src/netif/ethernetif.o  ./lwip/src/core/ipv4/autoip.o ./lwip/src/core/ipv4/icmp.o ./lwip/src/core/ipv4/igmp.o ./lwip/src/core/ipv4/inet.o ./lwip/src/core/ipv4/inet_chksum.o ./lwip/src/core/ipv4/ip.o ./lwip/src/core/ipv4/ip_addr.o ./lwip/src/core/ipv4/ip_frag.o  ./lwip/src/core/def.o ./lwip/src/core/dhcp.o ./lwip/src/core/dns.o ./lwip/src/core/init.o ./lwip/src/core/mem.o ./lwip/src/core/memp.o ./lwip/src/core/netif.o ./lwip/src/core/pbuf.o ./lwip/src/core/raw.o ./lwip/src/core/stats.o ./lwip/src/core/sys.o ./lwip/src/core/tcp.o ./lwip/src/core/tcp_in.o ./lwip/src/core/tcp_out.o ./lwip/src/core/timers.o ./lwip/src/core/udp.o  ./lwip/src/arch/lpc17xx_40xx_emac.o ./lwip/src/arch/lpc17xx_40xx_systick_arch.o ./lwip/src/arch/lpc_debug.o  ./lwip/src/api/api_lib.o ./lwip/src/api/api_msg.o ./lwip/src/api/err.o ./lwip/src/api/netbuf.o ./lwip/src/api/netdb.o ./lwip/src/api/netifapi.o ./lwip/src/api/sockets.o ./lwip/src/api/tcpip.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/httpd.o ./example/src/lwip_fs.o ./example/src/sysinit.o ./example/src/webserver.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: webserver.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "webserver.axf"; # arm-none-eabi-objcopy -v -O binary "webserver.axf" "webserver.bin" ; # checksum -p LPC1769 -d "webserver.bin";
+   text	   data	    bss	    dec	    hex	filename
+  67120	     16	   1164	  68300	  10acc	webserver.axf
+ 
+
+20:34:47 Build Finished. 0 errors, 0 warnings. (took 1s.90ms)
+

@@ -1,0 +1,2 @@
+HC_SR04.c:5:6:initTimer2Capture	4	static
+HC_SR04.c:16:6:initTimer3Match	4	static

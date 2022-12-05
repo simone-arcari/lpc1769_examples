@@ -1,0 +1,4 @@
+lpc1769_air_conditioning.c:35:5:main	120	static
+lpc1769_air_conditioning.c:151:6:delay_ms	16	static
+lpc1769_air_conditioning.c:170:8:i2c_reg_write	24	static
+lpc1769_air_conditioning.c:209:8:i2c_reg_read	24	static

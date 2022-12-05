@@ -1,0 +1,5 @@
+i2c_bit_banging.c:47:6:i2c_BB_init	4	static
+i2c_bit_banging.c:67:6:start_i2c	8	static
+i2c_bit_banging.c:87:6:stop_i2c	8	static
+i2c_bit_banging.c:117:6:ACK	4	static
+i2c_bit_banging.c:127:6:RIT_IRQHandler	8	static

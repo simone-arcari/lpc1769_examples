@@ -1,0 +1,6 @@
+14:37:11 **** Incremental Build of configuration Debug for project lpc1769_inut_output ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+
+14:37:11 Build Finished. 0 errors, 0 warnings. (took 141ms)
+

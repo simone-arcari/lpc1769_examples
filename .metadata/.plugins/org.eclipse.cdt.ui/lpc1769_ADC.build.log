@@ -1,0 +1,21 @@
+00:46:07 **** Incremental Build of configuration Debug for project lpc1769_ADC ****
+make -r -j4 all 
+Building file: ../src/lpc1769.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/lpc1769.d" -MT"src/lpc1769.o" -MT"src/lpc1769.d" -o "src/lpc1769.o" "../src/lpc1769.c"
+Finished building: ../src/lpc1769.c
+ 
+Building target: lpc1769_ADC.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_board_nxp_lpcxpresso_1769\Debug" -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="lpc1769_ADC.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "lpc1769_Debug.ld" -o "lpc1769_ADC.axf"  ./src/cr_startup_lpc175x_6x.o ./src/lpc1769.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: lpc1769_ADC.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "lpc1769_ADC.axf"; # arm-none-eabi-objcopy -v -O binary "lpc1769_ADC.axf" "lpc1769_ADC.bin" ; # checksum -p LPC1769 -d "lpc1769_ADC.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3376	      0	      4	   3380	    d34	lpc1769_ADC.axf
+ 
+
+00:46:08 Build Finished. 0 errors, 0 warnings. (took 573ms)
+

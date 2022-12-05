@@ -1,0 +1,9 @@
+lpc1769_i2c_routine.c:53:6:delayUs	16	static
+lpc1769_i2c_routine.c:71:6:delayMs	16	static
+lpc1769_i2c_routine.c:87:6:start_i2c	8	static
+lpc1769_i2c_routine.c:101:6:stop_i2c	8	static
+lpc1769_i2c_routine.c:124:6:ACK	4	static
+lpc1769_i2c_routine.c:134:6:RIT_IRQHandler	8	static
+lpc1769_i2c_routine.c:290:6:SEND_EEPROM	16	static
+lpc1769_i2c_routine.c:308:6:REC_EEPROM	16	static
+lpc1769_i2c_routine.c:336:5:main	24	static

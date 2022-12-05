@@ -1,0 +1,4 @@
+display.c:13:6:setDigits	16	static
+display.c:55:6:displayView2Digits	24	static
+display.c:81:6:displayView3Digits	24	static
+display.c:118:6:displayView4Digits	24	static

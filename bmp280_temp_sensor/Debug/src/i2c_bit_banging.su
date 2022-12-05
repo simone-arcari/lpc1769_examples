@@ -1,0 +1,4 @@
+i2c_bit_banging.c:42:6:i2c_BB_init	4	static
+i2c_bit_banging.c:61:6:start_i2c	8	static
+i2c_bit_banging.c:81:6:stop_i2c	8	static
+i2c_bit_banging.c:111:6:ACK	4	static

@@ -1,0 +1,6 @@
+20:07:14 **** Incremental Build of configuration Debug for project lpc1769_HC-SR04 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+
+20:07:14 Build Finished. 0 errors, 0 warnings. (took 109ms)
+

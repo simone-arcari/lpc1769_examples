@@ -1,0 +1,14 @@
+16:10:01 **** Incremental Build of configuration Debug for project lpc1769_BMP280 ****
+make -r -j4 all 
+Building file: ../src/temperature.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/temperature.d" -MT"src/temperature.o" -MT"src/temperature.d" -o "src/temperature.o" "../src/temperature.c"
+../src/temperature.c:7:10: fatal error: bmp280.h: No such file or directory
+ #include "bmp280.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:29: src/temperature.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+
+16:10:01 Build Failed. 2 errors, 0 warnings. (took 213ms)
+

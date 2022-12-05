@@ -1,0 +1,6 @@
+15:55:14 **** Incremental Build of configuration Debug for project periph_systick ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+
+15:55:14 Build Finished. 0 errors, 0 warnings. (took 110ms)
+

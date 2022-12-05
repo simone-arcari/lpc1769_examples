@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "lpcio.h": "c",
+        "lpc_registri.h": "c",
+        "lpc_joystick.h": "c",
+        "servo.h": "c",
+        "i2c.h": "c"
+    }
+}

@@ -1,0 +1,35 @@
+12:31:51 **** Incremental Build of configuration Debug for project lpc1769_display_16x2_Gabriele_Nocera ****
+make -r -j4 all 
+Building file: ../src/HD44780.c
+Building file: ../src/lpc1769_display_16x2_Gabriele_Nocera.c
+Building file: ../src/lpcio.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/lpc1769_display_16x2_Gabriele_Nocera.d" -MT"src/lpc1769_display_16x2_Gabriele_Nocera.o" -MT"src/lpc1769_display_16x2_Gabriele_Nocera.d" -o "src/lpc1769_display_16x2_Gabriele_Nocera.o" "../src/lpc1769_display_16x2_Gabriele_Nocera.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/HD44780.d" -MT"src/HD44780.o" -MT"src/HD44780.d" -o "src/HD44780.o" "../src/HD44780.c"
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/lpcio.d" -MT"src/lpcio.o" -MT"src/lpcio.d" -o "src/lpcio.o" "../src/lpcio.c"
+Finished building: ../src/lpc1769_display_16x2_Gabriele_Nocera.c
+Finished building: ../src/lpcio.c
+ 
+ 
+Finished building: ../src/HD44780.c
+ 
+Building target: lpc1769_display_16x2_Gabriele_Nocera.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="lpc1769_display_16x2_Gabriele_Nocera.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1769_display_16x2_Gabriele_Nocera_Debug.ld" -o "lpc1769_display_16x2_Gabriele_Nocera.axf"  ./src/HD44780.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/lpc1769_display_16x2_Gabriele_Nocera.o ./src/lpcio.o ./src/sysinit.o   -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        4156 B       512 KB      0.79%
+        RamLoc32:          60 B        32 KB      0.18%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: lpc1769_display_16x2_Gabriele_Nocera.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "lpc1769_display_16x2_Gabriele_Nocera.axf"; # arm-none-eabi-objcopy -v -O binary "lpc1769_display_16x2_Gabriele_Nocera.axf" "lpc1769_display_16x2_Gabriele_Nocera.bin" ; # checksum -p LPC1769 -d "lpc1769_display_16x2_Gabriele_Nocera.bin";
+   text	   data	    bss	    dec	    hex	filename
+   4156	      0	     60	   4216	   1078	lpc1769_display_16x2_Gabriele_Nocera.axf
+ 
+
+12:31:52 Build Finished. 0 errors, 0 warnings. (took 692ms)
+

@@ -1,0 +1,16 @@
+00:46:06 **** Incremental Build of configuration Debug for project lpc1769_PWM ****
+make -r -j4 all 
+Building target: lpc1769_PWM.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_board_nxp_lpcxpresso_1769\Debug" -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="lpc1769_PWM.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "lpc1769_Debug.ld" -o "lpc1769_PWM.axf"  ./src/cr_startup_lpc175x_6x.o ./src/lpc1769.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: lpc1769_PWM.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "lpc1769_PWM.axf"; # arm-none-eabi-objcopy -v -O binary "lpc1769_PWM.axf" "lpc1769_PWM.bin" ; # checksum -p LPC1769 -d "lpc1769_PWM.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1756	     12	      0	   1768	    6e8	lpc1769_PWM.axf
+ 
+
+00:46:06 Build Finished. 0 errors, 0 warnings. (took 415ms)
+

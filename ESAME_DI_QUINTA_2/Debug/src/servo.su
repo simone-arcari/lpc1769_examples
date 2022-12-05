@@ -1,0 +1,2 @@
+servo.c:8:6:servo_pin_init	16	static
+servo.c:47:6:servo_write	16	static

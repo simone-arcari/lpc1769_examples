@@ -1,0 +1,6 @@
+lpc_joystick.c:6:6:joystick_pin	16	static
+lpc_joystick.c:13:6:joystick_init	8	static
+lpc_joystick.c:26:5:pin_correct_test	16	static
+lpc_joystick.c:31:6:set_channel	24	static
+lpc_joystick.c:99:5:value_x	4	static
+lpc_joystick.c:142:5:value_y	4	static

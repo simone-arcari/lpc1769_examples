@@ -1,0 +1,20 @@
+14:47:32 **** Build of configuration Debug for project lpc1769_7seg_switch_UP-DOWN ****
+make -r -j4 all 
+Building target: lpc1769_7seg_switch_UP-DOWN.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="lpc1769_7seg_switch_UP-DOWN.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1769_7seg_switch_UP-DOWN_Debug.ld" -o "lpc1769_7seg_switch_UP-DOWN.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/display.o ./src/lpc1769_7seg_switch_UP-DOWN.o ./src/sysinit.o   -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        1964 B       512 KB      0.37%
+        RamLoc32:           4 B        32 KB      0.01%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: lpc1769_7seg_switch_UP-DOWN.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "lpc1769_7seg_switch_UP-DOWN.axf"; # arm-none-eabi-objcopy -v -O binary "lpc1769_7seg_switch_UP-DOWN.axf" "lpc1769_7seg_switch_UP-DOWN.bin" ; # checksum -p LPC1769 -d "lpc1769_7seg_switch_UP-DOWN.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1964	      0	      4	   1968	    7b0	lpc1769_7seg_switch_UP-DOWN.axf
+ 
+
+14:47:33 Build Finished. 0 errors, 0 warnings. (took 362ms)
+

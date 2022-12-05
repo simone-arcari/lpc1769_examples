@@ -1,0 +1,7 @@
+HD44780_PCF8574_i2c.c:34:15:WriteByte_i2c	24	static
+HD44780_PCF8574_i2c.c:127:6:InitLCD_i2c	8	static
+HD44780_PCF8574_i2c.c:186:15:WriteChar_i2c	16	static
+HD44780_PCF8574_i2c.c:199:15:PutCommand_i2c	16	static
+HD44780_PCF8574_i2c.c:213:15:GoToLine_i2c	24	static
+HD44780_PCF8574_i2c.c:246:6:WriteString_i2c	24	static
+HD44780_PCF8574_i2c.c:268:6:WriteNumber_i2c	56	dynamic

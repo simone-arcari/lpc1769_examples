@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="D:\SIMONE\Didattica a distanza\bmp280_temp_sensor.zip"/>
+			<item value="F:\ultima versione i2c routine\lpc1769_i2c_routine.zip"/>
+			<item value="C:\Users\simon\Desktop\lpc1769_i2c_routine.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_I2C (1).zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_I2C.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_DHT11_LCD.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_step_motor_simple.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_step_motor.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_servo (1).zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_semaforo (1).zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_robot.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_QEI.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_PWM.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_LEDs.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_LCD.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_HC-SR04.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_buzzer.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_ADC.zip"/>
+			<item value="C:\Users\simon\Downloads\lpc1769_7seg.zip"/>
+			<item value="F:\lpc1769-didattica\ESAME_DI_QUINTA.zip"/>
+		</list>
+	</section>
+	<section name="com.crt.quickstart.views.wizards.examples.QSExampleSelectionPage">
+		<item value="D:\SIMONE\Didattica a distanza" key="dirname"/>
+	</section>
+</section>

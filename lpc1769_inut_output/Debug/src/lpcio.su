@@ -1,0 +1,4 @@
+lpcio.c:4:6:pinMode	24	static
+lpcio.c:53:6:digitalWrite	24	static
+lpcio.c:113:6:delayMs	16	static
+lpcio.c:139:6:delayUs	16	static

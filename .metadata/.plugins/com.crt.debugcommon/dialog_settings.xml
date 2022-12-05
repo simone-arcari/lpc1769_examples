@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.crt.debugcommon.ui.TabListSelectionDialog">
+		<item value="1040" key="settings.height"/>
+		<item value="1920" key="settings.width"/>
+	</section>
+</section>

@@ -1,0 +1,6 @@
+10:51:41 **** Incremental Build of configuration Debug for project lpc1769_pulsanti ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+
+10:51:41 Build Finished. 0 errors, 0 warnings. (took 215ms)
+

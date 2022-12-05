@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;lpc1769_i2c_routine&apos;" deleteContents="true" description="Delete resource &apos;lpc1769_i2c_routine&apos;" element1="/lpc1769_i2c_routine" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1581101802959"/>
+</session>

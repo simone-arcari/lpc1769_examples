@@ -1,0 +1,2 @@
+lpc1769_pulsanti.c:14:6:EINT3_IRQHandler	4	static
+lpc1769_pulsanti.c:56:5:main	4	static

@@ -1,0 +1,17 @@
+lpc1769_HD44780_i2c_routine.c:128:6:delayUs	16	static
+lpc1769_HD44780_i2c_routine.c:146:6:delayMs	16	static
+lpc1769_HD44780_i2c_routine.c:162:6:start_i2c	8	static
+lpc1769_HD44780_i2c_routine.c:176:6:stop_i2c	8	static
+lpc1769_HD44780_i2c_routine.c:199:6:ACK	4	static
+lpc1769_HD44780_i2c_routine.c:209:6:RIT_IRQHandler	8	static
+lpc1769_HD44780_i2c_routine.c:367:6:SEND_EEPROM	16	static
+lpc1769_HD44780_i2c_routine.c:385:6:REC_EEPROM	16	static
+lpc1769_HD44780_i2c_routine.c:415:15:WriteByte_i2c	24	static
+lpc1769_HD44780_i2c_routine.c:499:6:InitLCD_i2c	8	static
+lpc1769_HD44780_i2c_routine.c:550:15:WriteChar_i2c	16	static
+lpc1769_HD44780_i2c_routine.c:556:15:PutCommand_i2c	16	static
+lpc1769_HD44780_i2c_routine.c:562:15:GoToLine_i2c	24	static
+lpc1769_HD44780_i2c_routine.c:588:6:WriteString_i2c	24	static
+lpc1769_HD44780_i2c_routine.c:603:6:WriteNumber_i2c	56	dynamic
+lpc1769_HD44780_i2c_routine.c:636:6:ADC_IRQHandler	4	static
+lpc1769_HD44780_i2c_routine.c:643:5:main	24	static

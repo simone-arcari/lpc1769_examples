@@ -1,0 +1,1003 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                              ./src/sysinit.o (Chip_SystemInit)
+C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                              C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o) (Chip_Clock_EnablePLL)
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+
+Discarded input sections
+
+ .group         0x00000000        0xc ./src/HC_SR04.o
+ .group         0x00000000        0xc ./src/HC_SR04.o
+ .text          0x00000000        0x0 ./src/HC_SR04.o
+ .data          0x00000000        0x0 ./src/HC_SR04.o
+ .bss           0x00000000        0x0 ./src/HC_SR04.o
+ .group         0x00000000        0xc ./src/HD44780.o
+ .group         0x00000000        0xc ./src/HD44780.o
+ .group         0x00000000        0xc ./src/HD44780.o
+ .group         0x00000000        0xc ./src/HD44780.o
+ .text          0x00000000        0x0 ./src/HD44780.o
+ .data          0x00000000        0x0 ./src/HD44780.o
+ .bss           0x00000000        0x0 ./src/HD44780.o
+ .text.WriteNumber_i2c
+                0x00000000      0x150 ./src/HD44780.o
+ .text.lcd_rig_sh
+                0x00000000       0x14 ./src/HD44780.o
+ .text.lcd_lef_sh
+                0x00000000       0x14 ./src/HD44780.o
+ .debug_macro   0x00000000      0xaa8 ./src/HD44780.o
+ .debug_macro   0x00000000      0x313 ./src/HD44780.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc175x_6x.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00000000      0xaa8 ./src/cr_startup_lpc175x_6x.o
+ .group         0x00000000        0xc ./src/crp.o
+ .group         0x00000000        0xc ./src/crp.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .debug_macro   0x00000000      0xaa8 ./src/crp.o
+ .group         0x00000000        0xc ./src/i2c.o
+ .group         0x00000000        0xc ./src/i2c.o
+ .group         0x00000000        0xc ./src/i2c.o
+ .text          0x00000000        0x0 ./src/i2c.o
+ .data          0x00000000        0x0 ./src/i2c.o
+ .bss           0x00000000        0x0 ./src/i2c.o
+ .debug_macro   0x00000000      0xaa8 ./src/i2c.o
+ .debug_macro   0x00000000      0x313 ./src/i2c.o
+ .debug_macro   0x00000000       0x88 ./src/i2c.o
+ .group         0x00000000        0xc ./src/lpc_joystick.o
+ .group         0x00000000        0xc ./src/lpc_joystick.o
+ .text          0x00000000        0x0 ./src/lpc_joystick.o
+ .data          0x00000000        0x0 ./src/lpc_joystick.o
+ .bss           0x00000000        0x0 ./src/lpc_joystick.o
+ .bss.AD0DR_X   0x00000000        0x4 ./src/lpc_joystick.o
+ .bss.AD0DR_Y   0x00000000        0x4 ./src/lpc_joystick.o
+ .bss.X_Value   0x00000000        0x4 ./src/lpc_joystick.o
+ .bss.Y_Value   0x00000000        0x4 ./src/lpc_joystick.o
+ .debug_macro   0x00000000      0xaa8 ./src/lpc_joystick.o
+ .debug_macro   0x00000000      0x313 ./src/lpc_joystick.o
+ .group         0x00000000        0xc ./src/lpcio.o
+ .group         0x00000000        0xc ./src/lpcio.o
+ .text          0x00000000        0x0 ./src/lpcio.o
+ .data          0x00000000        0x0 ./src/lpcio.o
+ .bss           0x00000000        0x0 ./src/lpcio.o
+ .text.delayUs  0x00000000       0x64 ./src/lpcio.o
+ .debug_macro   0x00000000      0xaa8 ./src/lpcio.o
+ .debug_macro   0x00000000      0x313 ./src/lpcio.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .text          0x00000000        0x0 ./src/main.o
+ .data          0x00000000        0x0 ./src/main.o
+ .bss           0x00000000        0x0 ./src/main.o
+ .debug_macro   0x00000000      0xaa8 ./src/main.o
+ .debug_macro   0x00000000      0x313 ./src/main.o
+ .debug_macro   0x00000000       0x88 ./src/main.o
+ .debug_macro   0x00000000       0xe2 ./src/main.o
+ .group         0x00000000        0xc ./src/servo.o
+ .group         0x00000000        0xc ./src/servo.o
+ .group         0x00000000        0xc ./src/servo.o
+ .text          0x00000000        0x0 ./src/servo.o
+ .data          0x00000000        0x0 ./src/servo.o
+ .bss           0x00000000        0x0 ./src/servo.o
+ .debug_macro   0x00000000      0xaa8 ./src/servo.o
+ .debug_macro   0x00000000       0x1c ./src/servo.o
+ .debug_macro   0x00000000      0x313 ./src/servo.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .text          0x00000000        0x0 ./src/sysinit.o
+ .data          0x00000000        0x0 ./src/sysinit.o
+ .bss           0x00000000        0x0 ./src/sysinit.o
+ .rodata.OscRateIn
+                0x00000000        0x4 ./src/sysinit.o
+ .rodata.RTCOscRateIn
+                0x00000000        0x4 ./src/sysinit.o
+ .debug_macro   0x00000000      0xaa8 ./src/sysinit.o
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text          0x00000000        0x0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .data          0x00000000        0x0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .bss           0x00000000        0x0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_EnableCrystal
+                0x00000000       0x20 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsCrystalEnabled
+                0x00000000       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_SetupXtalClocking
+                0x00000000       0x90 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12e C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text          0x00000000        0x0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .data          0x00000000        0x0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .bss           0x00000000        0x0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLEnabled
+                0x00000000       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLEnabled
+                0x00000000       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLConnected
+                0x00000000       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLConnected
+                0x00000000       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLSource
+                0x00000000       0x20 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainOscRate
+                0x00000000       0x14 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetIntOscRate
+                0x00000000       0x14 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetRTCOscRate
+                0x00000000       0x14 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLInClockRate
+                0x00000000        0xe C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBPLLInClockRate
+                0x00000000        0xe C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_EnablePeriphClock
+                0x00000000       0x34 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_DisablePeriphClock
+                0x00000000       0x38 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsPeripheralClockEnabled
+                0x00000000       0x3c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetCPUClockSource
+                0x00000000       0x2a C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetCPUClockSource
+                0x00000000       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetCPUClockDiv
+                0x00000000       0x1c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetUSBClockDiv
+                0x00000000       0x30 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBClockDiv
+                0x00000000       0x1c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetPCLKDiv
+                0x00000000       0x64 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetPCLKDiv
+                0x00000000       0x8c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetCLKOUTSource
+                0x00000000       0x44 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetSYSCLKRate
+                0x00000000       0x34 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLOutClockRate
+                0x00000000       0x54 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBPLLOutClockRate
+                0x00000000       0x40 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainClockRate
+                0x00000000       0x28 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetSystemClockRate
+                0x00000000       0x18 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBClockRate
+                0x00000000       0x38 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetPeripheralClockRate
+                0x00000000       0x26 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0xa9c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12e C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/HC_SR04.o
+LOAD ./src/HD44780.o
+LOAD ./src/cr_startup_lpc175x_6x.o
+LOAD ./src/crp.o
+LOAD ./src/i2c.o
+LOAD ./src/lpc_joystick.o
+LOAD ./src/lpcio.o
+LOAD ./src/main.o
+LOAD ./src/servo.o
+LOAD ./src/sysinit.o
+LOAD C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a
+START GROUP
+LOAD c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a
+LOAD c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libcr_eabihelpers.a
+LOAD c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a
+END GROUP
+                0x00000000                __base_MFlash512 = 0x0
+                0x00000000                __base_Flash = 0x0
+                0x00080000                __top_MFlash512 = 0x80000
+                0x00080000                __top_Flash = 0x80000
+                0x10000000                __base_RamLoc32 = 0x10000000
+                0x10000000                __base_RAM = 0x10000000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x10008000                __top_RAM = 0x10008000
+                0x2007c000                __base_RamAHB32 = 0x2007c000
+                0x2007c000                __base_RAM2 = 0x2007c000
+                0x20084000                __top_RamAHB32 = 0x20084000
+                0x20084000                __top_RAM2 = 0x20084000
+
+.text           0x00000000     0x2280
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc175x_6x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x2280 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x2280 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000000 ADDR (.bss)
+                0x000000e8        0x4 LONG 0xb0 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4      0x12c ./src/cr_startup_lpc175x_6x.o
+                0x000000f4                data_init
+                0x00000136                bss_init
+                0x0000016c                ResetISR
+                0x000001e4                NMI_Handler
+                0x000001ea                HardFault_Handler
+                0x000001f0                MemManage_Handler
+                0x000001f6                BusFault_Handler
+                0x000001fc                UsageFault_Handler
+                0x00000202                SVC_Handler
+                0x00000208                DebugMon_Handler
+                0x0000020e                PendSV_Handler
+                0x0000021a                UART0_IRQHandler
+                0x0000021a                CANActivity_IRQHandler
+                0x0000021a                UART1_IRQHandler
+                0x0000021a                IntDefaultHandler
+                0x0000021a                PLL0_IRQHandler
+                0x0000021a                CAN_IRQHandler
+                0x0000021a                PLL1_IRQHandler
+                0x0000021a                SSP0_IRQHandler
+                0x0000021a                I2S_IRQHandler
+                0x0000021a                EINT2_IRQHandler
+                0x0000021a                RTC_IRQHandler
+                0x0000021a                TIMER0_IRQHandler
+                0x0000021a                SPI_IRQHandler
+                0x0000021a                TIMER3_IRQHandler
+                0x0000021a                EINT1_IRQHandler
+                0x0000021a                TIMER1_IRQHandler
+                0x0000021a                UART2_IRQHandler
+                0x0000021a                ADC_IRQHandler
+                0x0000021a                SSP1_IRQHandler
+                0x0000021a                USB_IRQHandler
+                0x0000021a                BOD_IRQHandler
+                0x0000021a                PWM1_IRQHandler
+                0x0000021a                WDT_IRQHandler
+                0x0000021a                USBActivity_IRQHandler
+                0x0000021a                QEI_IRQHandler
+                0x0000021a                EINT0_IRQHandler
+                0x0000021a                ETH_IRQHandler
+                0x0000021a                I2C0_IRQHandler
+                0x0000021a                DMA_IRQHandler
+                0x0000021a                I2C2_IRQHandler
+                0x0000021a                UART3_IRQHandler
+                0x0000021a                MCPWM_IRQHandler
+                0x000002fc                . = 0x2fc
+ *fill*         0x00000220       0xdc ff
+                0x000002fc                PROVIDE (__CRP_WORD_START__ = .)
+ *(.crp)
+ .crp           0x000002fc        0x4 ./src/crp.o
+                0x000002fc                CRP_WORD
+                0x00000300                PROVIDE (__CRP_WORD_END__ = .)
+                0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
+ *(.text*)
+ .text.initTimer2Capture
+                0x00000300       0x50 ./src/HC_SR04.o
+                0x00000300                initTimer2Capture
+ .text.initTimer3Match
+                0x00000350       0x88 ./src/HC_SR04.o
+                0x00000350                initTimer3Match
+ .text.WriteByte_i2c
+                0x000003d8      0x154 ./src/HD44780.o
+                0x000003d8                WriteByte_i2c
+ .text.InitLCD_i2c
+                0x0000052c       0xd0 ./src/HD44780.o
+                0x0000052c                InitLCD_i2c
+ .text.WriteChar_i2c
+                0x000005fc       0x24 ./src/HD44780.o
+                0x000005fc                WriteChar_i2c
+ .text.PutCommand_i2c
+                0x00000620       0x24 ./src/HD44780.o
+                0x00000620                PutCommand_i2c
+ .text.GoToLine_i2c
+                0x00000644       0x74 ./src/HD44780.o
+                0x00000644                GoToLine_i2c
+ .text.WriteString_i2c
+                0x000006b8       0x66 ./src/HD44780.o
+                0x000006b8                WriteString_i2c
+ *fill*         0x0000071e        0x2 ff
+ .text.lcd_pin  0x00000720       0xb4 ./src/HD44780.o
+                0x00000720                lcd_pin
+ .text.lcd_init
+                0x000007d4       0xf0 ./src/HD44780.o
+                0x000007d4                lcd_init
+ .text.clear_line
+                0x000008c4       0x98 ./src/HD44780.o
+                0x000008c4                clear_line
+ .text.toggle   0x0000095c       0x3c ./src/HD44780.o
+                0x0000095c                toggle
+ .text.send_high
+                0x00000998       0xf0 ./src/HD44780.o
+                0x00000998                send_high
+ .text.send_low
+                0x00000a88       0xf4 ./src/HD44780.o
+                0x00000a88                send_low
+ .text.lcd_cmd_hf
+                0x00000b7c       0x58 ./src/HD44780.o
+                0x00000b7c                lcd_cmd_hf
+ .text.lcd_cmd  0x00000bd4       0x68 ./src/HD44780.o
+                0x00000bd4                lcd_cmd
+ .text.lcd_dwr  0x00000c3c       0x68 ./src/HD44780.o
+                0x00000c3c                lcd_dwr
+ .text.lcd_msg  0x00000ca4       0x28 ./src/HD44780.o
+                0x00000ca4                lcd_msg
+ .text.lcd_int_msg
+                0x00000ccc      0x14c ./src/HD44780.o
+                0x00000ccc                lcd_int_msg
+ .text.GoToLine
+                0x00000e18       0x70 ./src/HD44780.o
+                0x00000e18                GoToLine
+ .text.I2C1_IRQHandler
+                0x00000e88      0x174 ./src/i2c.o
+                0x00000e88                I2C1_IRQHandler
+ .text.setupI2C1
+                0x00000ffc       0x80 ./src/i2c.o
+                0x00000ffc                setupI2C1
+ .text.startI2C1
+                0x0000107c       0x20 ./src/i2c.o
+                0x0000107c                startI2C1
+ .text.joystick_pin
+                0x0000109c       0x3c ./src/lpc_joystick.o
+                0x0000109c                joystick_pin
+ .text.joystick_init
+                0x000010d8       0x54 ./src/lpc_joystick.o
+                0x000010d8                joystick_init
+ .text.pin_correct_test
+                0x0000112c       0x3a ./src/lpc_joystick.o
+                0x0000112c                pin_correct_test
+ *fill*         0x00001166        0x2 ff
+ .text.set_channel
+                0x00001168      0x270 ./src/lpc_joystick.o
+                0x00001168                set_channel
+ .text.value_x  0x000013d8      0x17c ./src/lpc_joystick.o
+                0x000013d8                value_x
+ .text.value_y  0x00001554      0x168 ./src/lpc_joystick.o
+                0x00001554                value_y
+ .text.pinMode  0x000016bc      0x108 ./src/lpcio.o
+                0x000016bc                pinMode
+ .text.digitalWrite
+                0x000017c4      0x108 ./src/lpcio.o
+                0x000017c4                digitalWrite
+ .text.delayMs  0x000018cc       0x64 ./src/lpcio.o
+                0x000018cc                delayMs
+ .text.SysTick_Handler
+                0x00001930       0x8c ./src/main.o
+                0x00001930                SysTick_Handler
+ .text.RIT_IRQHandler
+                0x000019bc       0x1c ./src/main.o
+                0x000019bc                RIT_IRQHandler
+ .text.TIMER2_IRQHandler
+                0x000019d8       0xa0 ./src/main.o
+                0x000019d8                TIMER2_IRQHandler
+ .text.EINT3_IRQHandler
+                0x00001a78       0x68 ./src/main.o
+                0x00001a78                EINT3_IRQHandler
+ .text.main     0x00001ae0       0xb8 ./src/main.o
+                0x00001ae0                main
+ .text.lcd_presentation
+                0x00001b98       0xd8 ./src/main.o
+                0x00001b98                lcd_presentation
+ .text.EnContinuosMisure
+                0x00001c70       0x4c ./src/main.o
+                0x00001c70                EnContinuosMisure
+ .text.DsContinuosMisure
+                0x00001cbc       0x24 ./src/main.o
+                0x00001cbc                DsContinuosMisure
+ .text.StartHC_SR04
+                0x00001ce0       0x2c ./src/main.o
+                0x00001ce0                StartHC_SR04
+ .text.servo_pin_init
+                0x00001d0c      0x180 ./src/servo.o
+                0x00001d0c                servo_pin_init
+ .text.servo_write
+                0x00001e8c      0x104 ./src/servo.o
+                0x00001e8c                servo_write
+ .text.SystemInit
+                0x00001f90       0x24 ./src/sysinit.o
+                0x00001f90                SystemInit
+ .text.Chip_Clock_IsMainPLLEnabled
+                0x00001fb4       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLLocked
+                0x00001fd8       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLConnected
+                0x00001ffc       0x24 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_SetMainPLLSource
+                0x00002020       0x20 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_SetupIrcClocking
+                0x00002040       0x6a C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00002040                Chip_SetupIrcClocking
+ .text.Chip_SystemInit
+                0x000020aa        0xc C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x000020aa                Chip_SystemInit
+ *fill*         0x000020b6        0x2 ff
+ .text.Chip_Clock_FeedPLL
+                0x000020b8       0x34 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_EnablePLL
+                0x000020ec       0x44 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000020ec                Chip_Clock_EnablePLL
+ .text.Chip_Clock_DisablePLL
+                0x00002130       0x48 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002130                Chip_Clock_DisablePLL
+ .text.Chip_Clock_SetupPLL
+                0x00002178       0x5c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002178                Chip_Clock_SetupPLL
+ .text.Chip_Clock_SetCPUClockDiv
+                0x000021d4       0x20 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000021d4                Chip_Clock_SetCPUClockDiv
+ .text.__weak_main
+                0x000021f4        0x4 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+                0x000021f4                __weak_main
+                0x000021f4                __main
+ *(.rodata .rodata.* .constdata .constdata.*)
+ .rodata        0x000021f8       0x88 ./src/main.o
+                0x00002280                . = ALIGN (0x4)
+
+.glue_7         0x00002280        0x0
+ .glue_7        0x00002280        0x0 linker stubs
+
+.glue_7t        0x00002280        0x0
+ .glue_7t       0x00002280        0x0 linker stubs
+
+.vfp11_veneer   0x00002280        0x0
+ .vfp11_veneer  0x00002280        0x0 linker stubs
+
+.v4_bx          0x00002280        0x0
+ .v4_bx         0x00002280        0x0 linker stubs
+
+.iplt           0x00002280        0x0
+ .iplt          0x00002280        0x0 ./src/HC_SR04.o
+
+.rel.dyn        0x00002280        0x0
+ .rel.iplt      0x00002280        0x0 ./src/HC_SR04.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00002280                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002280                __exidx_end = .
+                0x00002280                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00002280
+ FILL mask 0xff
+                [!provide]                PROVIDE (__start_data_RAM2 = .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2)
+ *(.data.$RamAHB32)
+ *(.data.$RAM2.*)
+ *(.data.$RamAHB32.*)
+                0x2007c000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__end_data_RAM2 = .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+                0x10000000                . = ALIGN (0x4)
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x0 load address 0x00002280
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(CodeQuickAccess)
+ *(DataQuickAccess)
+ *(RamFunction)
+ *(.data*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _edata = .
+
+.igot.plt       0x10000000        0x0 load address 0x00002280
+ .igot.plt      0x10000000        0x0 ./src/HC_SR04.o
+
+.bss_RAM2       0x2007c000        0x0
+                0x2007c000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__start_bss_RAM2 = .)
+ *(.bss.$RAM2)
+ *(.bss.$RamAHB32)
+ *(.bss.$RAM2.*)
+ *(.bss.$RamAHB32.*)
+                0x2007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                PROVIDE (__end_bss_RAM2 = .)
+
+.bss            0x10000000       0xb0
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _bss = .
+ *(.bss*)
+ .bss.rs        0x10000000        0x4 ./src/HD44780.o
+                0x10000000                rs
+ .bss.rw        0x10000004        0x4 ./src/HD44780.o
+                0x10000004                rw
+ .bss.en        0x10000008        0x4 ./src/HD44780.o
+                0x10000008                en
+ .bss.d4        0x1000000c        0x4 ./src/HD44780.o
+                0x1000000c                d4
+ .bss.d5        0x10000010        0x4 ./src/HD44780.o
+                0x10000010                d5
+ .bss.d6        0x10000014        0x4 ./src/HD44780.o
+                0x10000014                d6
+ .bss.d7        0x10000018        0x4 ./src/HD44780.o
+                0x10000018                d7
+ .bss.rsP       0x1000001c        0x4 ./src/HD44780.o
+                0x1000001c                rsP
+ .bss.rwP       0x10000020        0x4 ./src/HD44780.o
+                0x10000020                rwP
+ .bss.enP       0x10000024        0x4 ./src/HD44780.o
+                0x10000024                enP
+ .bss.d4P       0x10000028        0x4 ./src/HD44780.o
+                0x10000028                d4P
+ .bss.d5P       0x1000002c        0x4 ./src/HD44780.o
+                0x1000002c                d5P
+ .bss.d6P       0x10000030        0x4 ./src/HD44780.o
+                0x10000030                d6P
+ .bss.d7P       0x10000034        0x4 ./src/HD44780.o
+                0x10000034                d7P
+ .bss.I2Cbuffer
+                0x10000038       0x40 ./src/i2c.o
+                0x10000038                I2Cbuffer
+ .bss.I2CbufferPtr
+                0x10000078        0x4 ./src/i2c.o
+                0x10000078                I2CbufferPtr
+ .bss.I2CbufferCnt
+                0x1000007c        0x4 ./src/i2c.o
+                0x1000007c                I2CbufferCnt
+ .bss.I2CrptStartPos
+                0x10000080        0x4 ./src/i2c.o
+                0x10000080                I2CrptStartPos
+ .bss.pin_X     0x10000084        0x4 ./src/lpc_joystick.o
+                0x10000084                pin_X
+ .bss.pin_Y     0x10000088        0x4 ./src/lpc_joystick.o
+                0x10000088                pin_Y
+ .bss.prot_x.3704
+                0x1000008c        0x4 ./src/lpc_joystick.o
+ .bss.x.3703    0x10000090        0x4 ./src/lpc_joystick.o
+ .bss.prot_y.3717
+                0x10000094        0x4 ./src/lpc_joystick.o
+ .bss.y.3716    0x10000098        0x4 ./src/lpc_joystick.o
+ .bss.joy_x     0x1000009c        0x4 ./src/main.o
+                0x1000009c                joy_x
+ .bss.joy_y     0x100000a0        0x4 ./src/main.o
+                0x100000a0                joy_y
+ .bss.pwm_x     0x100000a4        0x4 ./src/main.o
+                0x100000a4                pwm_x
+ .bss.pwm_y     0x100000a8        0x4 ./src/main.o
+                0x100000a8                pwm_y
+ .bss.TimerVal  0x100000ac        0x4 ./src/main.o
+                0x100000ac                TimerVal
+ *(COMMON)
+                0x100000b0                . = ALIGN (0x4)
+                0x100000b0                _ebss = .
+                [!provide]                PROVIDE (end = .)
+
+.noinit_RAM2    0x2007c000        0x0
+                0x2007c000                . = ALIGN (0x4)
+ *(.noinit.$RAM2)
+ *(.noinit.$RamAHB32)
+ *(.noinit.$RAM2.*)
+ *(.noinit.$RamAHB32.*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x100000b0        0x0
+                0x100000b0                . = ALIGN (0x4)
+                0x100000b0                _noinit = .
+ *(.noinit*)
+                0x100000b0                . = ALIGN (0x4)
+                0x100000b0                _end_noinit = .
+                [!provide]                PROVIDE (_pvHeapStart = DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                0xefff74de                PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+                0x00000000                _image_start = LOADADDR (.text)
+                0x00002280                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00002280                _image_size = (_image_end - _image_start)
+OUTPUT(ESAME_DI_QUINTA.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x240f
+ .debug_info    0x00000000       0x4e ./src/HC_SR04.o
+ .debug_info    0x0000004e      0x79d ./src/HD44780.o
+ .debug_info    0x000007eb      0x276 ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x00000a61       0x40 ./src/crp.o
+ .debug_info    0x00000aa1       0xeb ./src/i2c.o
+ .debug_info    0x00000b8c      0x1c1 ./src/lpc_joystick.o
+ .debug_info    0x00000d4d      0x1ae ./src/lpcio.o
+ .debug_info    0x00000efb      0x1a3 ./src/main.o
+ .debug_info    0x0000109e       0x88 ./src/servo.o
+ .debug_info    0x00001126      0x20f ./src/sysinit.o
+ .debug_info    0x00001335      0x4b0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x000017e5      0xc2a C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_abbrev   0x00000000      0xd8f
+ .debug_abbrev  0x00000000       0x31 ./src/HC_SR04.o
+ .debug_abbrev  0x00000031      0x1fc ./src/HD44780.o
+ .debug_abbrev  0x0000022d      0x12a ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x00000357       0x38 ./src/crp.o
+ .debug_abbrev  0x0000038f       0xa0 ./src/i2c.o
+ .debug_abbrev  0x0000042f      0x10a ./src/lpc_joystick.o
+ .debug_abbrev  0x00000539       0xca ./src/lpcio.o
+ .debug_abbrev  0x00000603      0x12a ./src/main.o
+ .debug_abbrev  0x0000072d       0x7a ./src/servo.o
+ .debug_abbrev  0x000007a7       0xeb ./src/sysinit.o
+ .debug_abbrev  0x00000892      0x1b0 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_abbrev  0x00000a42      0x34d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_aranges  0x00000000      0x458
+ .debug_aranges
+                0x00000000       0x28 ./src/HC_SR04.o
+ .debug_aranges
+                0x00000028       0xc0 ./src/HD44780.o
+ .debug_aranges
+                0x000000e8       0x80 ./src/cr_startup_lpc175x_6x.o
+ .debug_aranges
+                0x00000168       0x18 ./src/crp.o
+ .debug_aranges
+                0x00000180       0x30 ./src/i2c.o
+ .debug_aranges
+                0x000001b0       0x48 ./src/lpc_joystick.o
+ .debug_aranges
+                0x000001f8       0x38 ./src/lpcio.o
+ .debug_aranges
+                0x00000230       0x60 ./src/main.o
+ .debug_aranges
+                0x00000290       0x28 ./src/servo.o
+ .debug_aranges
+                0x000002b8       0x20 ./src/sysinit.o
+ .debug_aranges
+                0x000002d8       0x60 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_aranges
+                0x00000338      0x120 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_ranges   0x00000000      0x390
+ .debug_ranges  0x00000000       0x18 ./src/HC_SR04.o
+ .debug_ranges  0x00000018       0xb0 ./src/HD44780.o
+ .debug_ranges  0x000000c8       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x00000138       0x20 ./src/i2c.o
+ .debug_ranges  0x00000158       0x38 ./src/lpc_joystick.o
+ .debug_ranges  0x00000190       0x28 ./src/lpcio.o
+ .debug_ranges  0x000001b8       0x50 ./src/main.o
+ .debug_ranges  0x00000208       0x18 ./src/servo.o
+ .debug_ranges  0x00000220       0x10 ./src/sysinit.o
+ .debug_ranges  0x00000230       0x50 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_ranges  0x00000280      0x110 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_macro    0x00000000     0x5006
+ .debug_macro   0x00000000       0x24 ./src/HC_SR04.o
+ .debug_macro   0x00000024      0xaa8 ./src/HC_SR04.o
+ .debug_macro   0x00000acc      0x313 ./src/HC_SR04.o
+ .debug_macro   0x00000ddf       0x36 ./src/HD44780.o
+ .debug_macro   0x00000e15       0xe2 ./src/HD44780.o
+ .debug_macro   0x00000ef7       0x88 ./src/HD44780.o
+ .debug_macro   0x00000f7f       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00000f9c       0x1a ./src/crp.o
+ .debug_macro   0x00000fb6       0x34 ./src/crp.o
+ .debug_macro   0x00000fea       0x23 ./src/i2c.o
+ .debug_macro   0x0000100d       0x24 ./src/lpc_joystick.o
+ .debug_macro   0x00001031       0x24 ./src/lpcio.o
+ .debug_macro   0x00001055       0xd1 ./src/main.o
+ .debug_macro   0x00001126       0x1c ./src/main.o
+ .debug_macro   0x00001142       0x29 ./src/servo.o
+ .debug_macro   0x0000116b      0x1cd ./src/sysinit.o
+ .debug_macro   0x00001338       0x10 ./src/sysinit.o
+ .debug_macro   0x00001348      0x12e ./src/sysinit.o
+ .debug_macro   0x00001476      0x5b3 ./src/sysinit.o
+ .debug_macro   0x00001a29       0x22 ./src/sysinit.o
+ .debug_macro   0x00001a4b       0x7b ./src/sysinit.o
+ .debug_macro   0x00001ac6       0x10 ./src/sysinit.o
+ .debug_macro   0x00001ad6       0x2d ./src/sysinit.o
+ .debug_macro   0x00001b03       0x3a ./src/sysinit.o
+ .debug_macro   0x00001b3d       0x2d ./src/sysinit.o
+ .debug_macro   0x00001b6a      0xbb1 ./src/sysinit.o
+ .debug_macro   0x0000271b      0x22c ./src/sysinit.o
+ .debug_macro   0x00002947       0x42 ./src/sysinit.o
+ .debug_macro   0x00002989       0x52 ./src/sysinit.o
+ .debug_macro   0x000029db       0x78 ./src/sysinit.o
+ .debug_macro   0x00002a53       0x82 ./src/sysinit.o
+ .debug_macro   0x00002ad5      0x48c ./src/sysinit.o
+ .debug_macro   0x00002f61       0x34 ./src/sysinit.o
+ .debug_macro   0x00002f95      0x4c5 ./src/sysinit.o
+ .debug_macro   0x0000345a      0x1b7 ./src/sysinit.o
+ .debug_macro   0x00003611       0x10 ./src/sysinit.o
+ .debug_macro   0x00003621      0x21b ./src/sysinit.o
+ .debug_macro   0x0000383c      0x1b9 ./src/sysinit.o
+ .debug_macro   0x000039f5       0x40 ./src/sysinit.o
+ .debug_macro   0x00003a35       0x22 ./src/sysinit.o
+ .debug_macro   0x00003a57      0x162 ./src/sysinit.o
+ .debug_macro   0x00003bb9       0x94 ./src/sysinit.o
+ .debug_macro   0x00003c4d       0xb8 ./src/sysinit.o
+ .debug_macro   0x00003d05       0x4c ./src/sysinit.o
+ .debug_macro   0x00003d51       0x16 ./src/sysinit.o
+ .debug_macro   0x00003d67      0x328 ./src/sysinit.o
+ .debug_macro   0x0000408f       0x49 ./src/sysinit.o
+ .debug_macro   0x000040d8       0x16 ./src/sysinit.o
+ .debug_macro   0x000040ee       0xca ./src/sysinit.o
+ .debug_macro   0x000041b8       0x18 ./src/sysinit.o
+ .debug_macro   0x000041d0      0x1cd C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x0000439d      0xa9c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00004e39      0x1cd C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_line     0x00000000     0x26aa
+ .debug_line    0x00000000       0xa2 ./src/HC_SR04.o
+ .debug_line    0x000000a2      0x59d ./src/HD44780.o
+ .debug_line    0x0000063f      0x160 ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x0000079f       0xb1 ./src/crp.o
+ .debug_line    0x00000850      0x155 ./src/i2c.o
+ .debug_line    0x000009a5      0x336 ./src/lpc_joystick.o
+ .debug_line    0x00000cdb      0x1d0 ./src/lpcio.o
+ .debug_line    0x00000eab      0x24c ./src/main.o
+ .debug_line    0x000010f7      0x1a4 ./src/servo.o
+ .debug_line    0x0000129b      0x48d ./src/sysinit.o
+ .debug_line    0x00001728      0x5fa C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x00001d22      0x988 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_str      0x00000000    0x14261
+ .debug_str     0x00000000     0x43d5 ./src/HC_SR04.o
+ .debug_str     0x000043d5      0x936 ./src/HD44780.o
+                               0x4cf6 (size before relaxing)
+ .debug_str     0x00004d0b      0x1d6 ./src/cr_startup_lpc175x_6x.o
+                               0x2fba (size before relaxing)
+ .debug_str     0x00004ee1       0xe9 ./src/crp.o
+                               0x2ec7 (size before relaxing)
+ .debug_str     0x00004fca       0x3c ./src/i2c.o
+                               0x464a (size before relaxing)
+ .debug_str     0x00005006       0xb5 ./src/lpc_joystick.o
+                               0x444b (size before relaxing)
+ .debug_str     0x000050bb       0x71 ./src/lpcio.o
+                               0x445d (size before relaxing)
+ .debug_str     0x0000512c      0x1c7 ./src/main.o
+                               0x4c73 (size before relaxing)
+ .debug_str     0x000052f3       0x31 ./src/servo.o
+                               0x4401 (size before relaxing)
+ .debug_str     0x00005324     0xe118 ./src/sysinit.o
+                              0x10fdc (size before relaxing)
+ .debug_str     0x0001343c      0x3c6 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                              0x110bc (size before relaxing)
+ .debug_str     0x00013802      0xa5f C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                              0x11a57 (size before relaxing)
+
+.comment        0x00000000       0x75
+ .comment       0x00000000       0x75 ./src/HC_SR04.o
+                                 0x76 (size before relaxing)
+ .comment       0x00000075       0x76 ./src/HD44780.o
+ .comment       0x00000075       0x76 ./src/cr_startup_lpc175x_6x.o
+ .comment       0x00000075       0x76 ./src/crp.o
+ .comment       0x00000075       0x76 ./src/i2c.o
+ .comment       0x00000075       0x76 ./src/lpc_joystick.o
+ .comment       0x00000075       0x76 ./src/lpcio.o
+ .comment       0x00000075       0x76 ./src/main.o
+ .comment       0x00000075       0x76 ./src/servo.o
+ .comment       0x00000075       0x76 ./src/sysinit.o
+ .comment       0x00000075       0x76 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .comment       0x00000075       0x76 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .comment       0x00000075       0x76 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d ./src/HC_SR04.o
+ .ARM.attributes
+                0x0000002d       0x2d ./src/HD44780.o
+ .ARM.attributes
+                0x0000005a       0x2d ./src/cr_startup_lpc175x_6x.o
+ .ARM.attributes
+                0x00000087       0x33 ./src/crp.o
+ .ARM.attributes
+                0x000000ba       0x2d ./src/i2c.o
+ .ARM.attributes
+                0x000000e7       0x2d ./src/lpc_joystick.o
+ .ARM.attributes
+                0x00000114       0x2d ./src/lpcio.o
+ .ARM.attributes
+                0x00000141       0x2d ./src/main.o
+ .ARM.attributes
+                0x0000016e       0x2d ./src/servo.o
+ .ARM.attributes
+                0x0000019b       0x2d ./src/sysinit.o
+ .ARM.attributes
+                0x000001c8       0x2d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .ARM.attributes
+                0x000001f5       0x2d C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .ARM.attributes
+                0x00000222       0x2d c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+
+.debug_frame    0x00000000      0xe34
+ .debug_frame   0x00000000       0x50 ./src/HC_SR04.o
+ .debug_frame   0x00000050      0x2f0 ./src/HD44780.o
+ .debug_frame   0x00000340      0x170 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x000004b0       0x78 ./src/i2c.o
+ .debug_frame   0x00000528       0xe0 ./src/lpc_joystick.o
+ .debug_frame   0x00000608       0xb0 ./src/lpcio.o
+ .debug_frame   0x000006b8      0x12c ./src/main.o
+ .debug_frame   0x000007e4       0x60 ./src/servo.o
+ .debug_frame   0x00000844       0x34 ./src/sysinit.o
+ .debug_frame   0x00000878      0x12c C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_frame   0x000009a4      0x490 C:\Users\simon\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)

@@ -1,0 +1,30 @@
+15:05:32 **** Incremental Build of configuration Debug for project lpc1769_bmp280_temp_sensor ****
+make -r -j4 all 
+Building target: lpc1769_bmp280_temp_sensor.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="lpc1769_bmp280_temp_sensor.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1769_bmp280_temp_sensor_Debug.ld" -o "lpc1769_bmp280_temp_sensor.axf"  ./src/bmp280.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/main.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:       14728 B       512 KB      2.81%
+        RamLoc32:         168 B        32 KB      0.51%
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(fpprintf.o): in function `printf':
+fpprintf.c:(.text.printf+0x38): undefined reference to `__sys_write'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: fpprintf.c:(.text.printf+0x50): undefined reference to `__Ciob'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(_deferredlazyseek.o): in function `__flsbuf':
+_deferredlazyseek.c:(.text.__flsbuf+0x8c): undefined reference to `__sys_istty'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(_writebuf.o): in function `_Cwritebuf':
+_writebuf.c:(.text._Cwritebuf+0x14): undefined reference to `__sys_flen'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: _writebuf.c:(.text._Cwritebuf+0x28): undefined reference to `__sys_seek'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: _writebuf.c:(.text._Cwritebuf+0x4e): undefined reference to `__sys_write'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(alloc.o): in function `_Csys_alloc':
+alloc.c:(.text._Csys_alloc+0xe): undefined reference to `__sys_write'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: alloc.c:(.text._Csys_alloc+0x12): undefined reference to `__sys_appexit'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(fseek.o): in function `fseek':
+fseek.c:(.text.fseek+0x20): undefined reference to `__sys_istty'
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: fseek.c:(.text.fseek+0x96): undefined reference to `__sys_flen'
+collect2.exe: error: ld returned 1 exit status
+        RamAHB32:          0 GB        32 KB      0.00%
+make: *** [makefile:32: lpc1769_bmp280_temp_sensor.axf] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+
+15:05:32 Build Failed. 11 errors, 0 warnings. (took 319ms)
+

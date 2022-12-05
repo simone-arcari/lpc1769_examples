@@ -1,0 +1,317 @@
+/*
+===============================================================================
+ Name        : lpc1769_i2c_routine.c
+ Author      : $(author)
+ Version     :
+ Copyright   : $(copyright)
+ Description : main definition
+===============================================================================
+*/
+
+// NVIC peripherals interrupt
+#define ISER0 *(volatile unsigned long*) 0xE000E100
+
+// Power Control for Peripherals register
+#define PCONP *(volatile unsigned long*) 0x400FC0C4
+
+// registri System Tick Timer
+#define STCTRL *(volatile unsigned long*) 0xE000E010
+#define STRELOAD *(volatile unsigned long*) 0xE000E014
+
+// Repetitive Interrupt Timer Registers
+#define RICOMPVAL *(volatile unsigned long*) 0x400B0000
+#define RIMASK *(volatile unsigned long*) 0x400B0004
+#define RICTRL *(volatile unsigned long*) 0x400B0008
+#define RICOUNTER *(volatile unsigned long*) 0x400B000C
+
+#define FIO0DIR *(volatile unsigned long*) 0x2009C000
+#define FIO0SET *(volatile unsigned long*) 0x2009C018
+#define FIO0CLR *(volatile unsigned long*) 0x2009C01C
+#define FIO0MASK *(volatile unsigned long*) 0x2009C010
+#define FIO0PIN *(volatile unsigned long*) 0x2009C014
+
+//REGISTRI TIMER1
+#define TIMER1_TCR *(volatile unsigned long*) 0x40008004
+#define TIMER1_PR  *(volatile unsigned long*) 0x4000800C
+#define TIMER1_MR0 *(volatile unsigned long*) 0x40008018
+#define TIMER1_IR *(volatile unsigned long*) 0x40008000
+#define TIMER1_MCR *(volatile unsigned long*) 0x40008014
+
+// 24LC64 defines
+#define ADDR_24LC64_W	0b10100000		// 24LC64 address for write operation
+#define ADDR_24LC64_R	0b10100001		// 24LC64 address for read operation
+
+char SCL;								// valore logico del Serial Clock[SCL]
+char SDA;								// valore logico del Serial Data[SDA]
+int status = 0, bit = 0;				// variabile di stato per la macchina a stati e varibile per il conto dei bit
+unsigned char i2c_buffer[32];			//buffer contenente indirizzo e dati da trasmettere
+unsigned char i2c_data_rec[32];			//buffer contenente dati ricevuti
+int byte = 0, I2CbufferCnt;				// variabile da usare come indice per il buffer
+
+
+
+void delayUs(unsigned short delayInUs)
+{
+  /*
+   * setup timer #1 for delay
+   */
+  TIMER1_TCR = 0x02;          			//stop and reset timer
+  TIMER1_PR  = 0x00;          			//set prescaler to zero
+
+  TIMER1_MR0 = (96000000/4) / 1000000 * delayInUs;
+
+  TIMER1_IR  = 0xFF;          			//reset all interrrupt flags
+  TIMER1_MCR = 0x04;          			//stop timer on match
+  TIMER1_TCR = 0x01;          			//start timer
+
+  //wait until delay time has elapsed
+  while (TIMER1_TCR & 0x01);
+}
+
+void start_i2c()
+{
+	FIO0MASK = ~(0b11<<19);		// imposta la maschera per modificare solo i bit 19 e 20 di P0
+	FIO0DIR = 0x180000;			//Imposta come OUTPUT P0.19[SDA] e P0.20[SCL]
+	FIO0SET = 0b11<<19;			// imposta a livello logico alto i bit 19 e 20 di P0[SDA E SCL]
+
+	delayUs(15);				//delay di 30us
+
+	FIO0MASK = ~(1<<19);		// imposta la maschera per modificare solo iL bit 19 di P0
+	FIO0CLR = 1<<19;			// imposta a livello logico basso il bit 19 di P0[SDA]
+
+	delayUs(10);				//delay di 30us
+}
+
+void stop_i2c()
+{
+	delayUs(20);				//delay di 20us
+
+	FIO0MASK = ~(0b11<<19);		// imposta la maschera per modificare solo i bit 19 e 20 di P0
+	FIO0PIN = 0b10<<19;			// imposta a livello logico basso il bit 19 e alto il 20 di P0[SDA E SCL]
+
+	delayUs(15);				//delay di 30us
+
+	FIO0MASK = ~(1<<19);		// imposta la maschera per modificare solo iL bit 19 di P0
+	FIO0SET = 1<<19;		  	// imposta a livello logico alto il bit 19 di P0[SDA]
+
+	delayUs(10);				//delay di 30us
+
+	FIO0MASK = ~(0b11<<19);		// imposta la maschera per modificare solo i bit 19 e 20 di P0
+	FIO0DIR &= ~(0b11<<19);		// imposta come input il pin 19 e 20 di P0
+}
+
+void ACK()
+{
+	//imposta sda input contralla se i bit ack vale zero e rimposta sda output se invece vale 1 metti status = 0
+	FIO0MASK = ~(1<<19);		// imposta la maschera per modificare solo iL bit 19 di P0
+	FIO0DIR &= ~(1<<19);		// imposta come input il pin 19 di P0[SDA]
+
+	if(FIO0PIN & 0x80000)		// se il bit ACK vale 1(NACK) allora ricominciamo la comunicazione perchè evidentemente non è riuscita
+		status = 0;
+}
+
+void RIT_IRQHandler(void)
+{
+	static int Counter = 7;		// serve per delle operazioni sui bit come variabile di conto
+
+	// gestione SCL su P0.20
+	SCL = !SCL;				// inversione del valore logico BackPlane
+	FIO0MASK = ~(1<<20);	// imposta la maschera per modificare solo il bit 20 di P0[SCL]
+	FIO0PIN = SCL<<20;		// aggiorna il valore di P0.20[SCL]
+
+	switch(status)
+	{
+		// inizio segnale di start
+		case 0:
+		    start_i2c();	// inizio comunicazione i2c
+		    SCL = 1;		// dichiaro il valore di SCL alto perchè così al prossimo ciclo verrà invertito al valore basso
+
+		    status = 1;		// imposta il prossimo stato
+		    bit = 0;
+		    byte = 0;
+		break;
+
+		// trasmissione indirizzo
+		case 1:
+
+		    if(!SCL && Counter>=0)		// inviamo i bit solo quando SCL vale 0 cioè il momento in cui è concesso cambiaro stato ai bit
+		    {
+				if(i2c_buffer[byte] & 1<<Counter)	// estrapoliamo tutti i bit a ogni ciclo
+					SDA = 1;
+				else
+					SDA = 0;
+
+
+				delayUs(20);			//delay di 20us
+				FIO0MASK = ~(1<<19);	// imposta la maschera per modificare solo il bit 19 di P0[SCL]
+				FIO0PIN = SDA<<19;		// invio il bit corrente
+				Counter--;
+		    }
+
+		    if(!SCL)
+				bit++;		// variabile che tiene conto dei bit apparsi su SDA
+
+		    if(bit == 9 && SCL)
+		    {
+		    	if(SDA)
+		    	{
+		    		status = 3;			// RICEZIONE
+		    		byte = 0;			// se dobbiamo ricevere riempiremo l'array dall'inizio
+		    	}else{
+		    		status = 2;			// TRASMISSIONE
+		    		byte = 1;			// se dobbiamo trasmettere invieremo i dati dell'array dal secondo byte poiché il primo era l'indirizzo
+		    	}
+
+		    	ACK();		// controllo del bit ACK
+
+		    	Counter = 7;
+		    	bit = 0;
+		    }
+		break;
+
+		// trasmissione dati
+		case 2:
+		    FIO0MASK = ~(1<<19);		// imposta la maschera per modificare solo iL bit 19 di P0
+		    FIO0DIR |= 1<<19;		  	// imposta come output il pin 19 di P0[SDA]
+
+		    if(!SCL && Counter>=0)		// inviamo i bit solo quando SCL vale 0 cioè il momento in cui è concesso cambiaro stato ai bit
+		    {
+				if(i2c_buffer[byte] & 1<<Counter)	// estrapoliamo tutti i bit a ogni ciclo
+					SDA = 1;
+				else
+					SDA = 0;
+
+				delayUs(20);			//delay di 20us
+				FIO0MASK = ~(1<<19);	// imposta la maschera per modificare solo il bit 19 di P0[SCL]
+				FIO0PIN = SDA<<19;		// invio il bit corrente
+				Counter--;
+		    }
+
+		    if(!SCL)
+				bit++;		// variabile che tiene conto dei bit apparsi su SDA
+
+		    if(bit == 9 && SCL)
+		    {
+		    	Counter = 7;
+		    	bit = 0;
+		    	byte++;
+
+		    	if(byte > I2CbufferCnt)
+		    	{
+		    		byte = 0;
+		    		status = 4;
+		    	}
+
+		    	ACK();		// controllo del bit ACK
+		    }
+		break;
+
+		// ricezione dati
+		case 3:
+		    FIO0MASK = ~(1<<19);		// imposta la maschera per modificare solo iL bit 19 di P0
+		    FIO0DIR &= ~(1<<19);		// imposta come input il pin 19 di P0[SDA]
+
+		    if(SCL && Counter>=0)		// riceviamo i bit solo quando SCL vale 1
+		    {
+		    	if(FIO0PIN & 0x80000)	// se il pin 19 di P0 vale 1
+		    		i2c_data_rec[byte] |= 1<<Counter;			//ASSEGNA 1
+		    	else
+		    		i2c_data_rec[byte] &= ~(1<<Counter);		//ASSEGNA 0
+
+		    	Counter--;
+		    }
+
+		    if(SCL)
+		    	bit++;		// variabile che tiene conto dei bit apparsi su SDA
+
+		    if(bit == 8 && !SCL)
+		    {
+		    	Counter = 7;
+		    	bit = 0;
+		    	byte++;
+
+		    	if(byte > I2CbufferCnt)
+		    	{
+		    		byte = 0;
+		    		status = 4;
+		    	}
+
+		    	// ivio del bit NACK
+				delayUs(20);				//delay di 20us
+		    	FIO0MASK = ~(1<<19);		// imposta la maschera per modificare solo iL bit 19 di P0
+		    	FIO0DIR |= 1<<19;		  	// imposta come output il pin 19 di P0[SDA]
+		    	FIO0SET = 0x8000;			// imposta alto SDA
+		    }
+		break;
+
+		//segnale di stop fine comunicazione
+		case 4:
+		    stop_i2c();
+		    status = 5; 			//i2c non attivo
+		break;
+
+		case 5:
+		    // disabilito i2c
+		    PCONP &= ~(1<<16);						// disables Repetitive Interrupt Timer power/clock
+		    ISER0 &= ~(1<<29);						// disables in NVIC interrupt reception from RTI
+		break;
+
+		default:
+			stop_i2c();
+		    status = 0;
+		}
+	RICTRL |= 0b0001;					// Set RITINT in RICTRL register in order to clear the int flag
+}
+
+int main(void)
+{
+	// GPIO settings
+	FIO0MASK = 0xFFFFFFFF;
+	FIO0DIR = 0x180000;				//Imposta come OUTPUT P0.19[SDA] e P0.20[SCL]
+
+	// Repetitive Interrupt Timer settings
+	PCONP |= 1<<16;					// enables Repetitive Interrupt Timer power/clock
+	RICTRL |= 0b10;					// Set RITENCLR bit in RICTRL register
+    ISER0 |= 1<<29;					// enables in NVIC interrupt reception from RTI
+	RICOMPVAL = 960;				// Carica il contatore per la frequenza di aggiornamento[100KHz]
+
+
+
+
+
+	i2c_buffer[0] = ADDR_24LC64_W;	// 24LC64 Address WRITE
+	i2c_buffer[1] = 0;				// 24LC64 Address High Byte
+	i2c_buffer[2] = 0;				// 24LC64 Address Low Byte
+	i2c_buffer[3] = 64;				// 24LC64 Byte0 value
+	I2CbufferCnt = 3;				// Total buffer size: only data
+
+	while(status <= 4){				// il ciclo si interrompre prima di giungere al case 5
+		__asm volatile ("wfi");		// aspetta qualsiasi interrupt
+	}
+
+	int delay = 1000000;
+	while(delay--);
+
+	status = 0;
+	i2c_buffer[0] = ADDR_24LC64_W;	// 24LC64 Address WRITE
+	i2c_buffer[1] = 0;				// 24LC64 Address High Byte
+	i2c_buffer[2] = 0;				// 24LC64 Address Low Byte
+	I2CbufferCnt = 2;				// Total buffer size: only data
+
+    while(status <= 3){				// il ciclo si interrompre prima di giungere al case 4
+		__asm volatile ("wfi");		// aspetta qualsiasi interrupt
+    }
+
+    status = 0;
+	i2c_buffer[0] = ADDR_24LC64_R;	// 24LC64 Address READ
+	I2CbufferCnt = 0;				// Total buffer size: only data
+
+	while(1){						// il ciclo si interrompre dopo il case 5 cioè la disabilitazione dell'i2c
+		__asm volatile ("wfi");		// aspetta qualsiasi interrupt
+	}
+
+    return 0 ;
+}
+
+
+

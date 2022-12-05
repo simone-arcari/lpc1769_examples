@@ -1,0 +1,14 @@
+HD44780.c:25:6:lcd_pin	24	static
+HD44780.c:46:6:InitLCD	8	static
+HD44780.c:66:6:clear_line	48	static
+HD44780.c:76:6:toggle	8	static
+HD44780.c:83:6:send_high	16	static
+HD44780.c:109:6:send_low	16	static
+HD44780.c:135:6:lcd_cmd_hf	16	static
+HD44780.c:144:6:PutCommand	16	static
+HD44780.c:157:6:lcd_dwr	16	static
+HD44780.c:172:6:WriteString	24	static
+HD44780.c:188:6:WriteNumber	56	dynamic
+HD44780.c:221:6:lcd_rig_sh	8	static
+HD44780.c:227:6:lcd_lef_sh	8	static
+HD44780.c:233:6:GoToLine	24	static

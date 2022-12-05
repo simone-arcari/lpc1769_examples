@@ -1,0 +1,6 @@
+15:49:07 **** Incremental Build of configuration Debug for project periph_ritimer ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+
+15:49:07 Build Finished. 0 errors, 0 warnings. (took 117ms)
+
